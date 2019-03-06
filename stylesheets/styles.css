@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+
+body {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: white;
+  }
+
+  a {
+    color: #f89011;
+    font-weight: 400;
+  }
+
+h1 {
+    text-transform: uppercase;
+    font-size: 7vh !important;
+}
+
+.lead {
+    font-size: 2.5vh !important;
+}
+
+.logo-bw img {
+    height: 20vh;
+    margin-bottom: 20px;
+}
+.navbar {
+    top: -100px;
+    min-height: 80px;
+    transition: top 0.5s;
+}
+.navbar-custom {
+    background-color: #132a44;
+}
+.navbar-brand {
+    padding: 15px, 5px;
+    height: 80px;
+    line-height: 80px;
+}
+.navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 23px;
+    padding: 9px 10px !important;
+  }
+
+.navbar-brand img {
+    width: 35vh;
+    margin-top: -8px;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+    font-size: 20px;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #f89011;
+    font-size: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 42px;
+    margin-bottom: 40px;
+    color: #f89011;
+}
+
+.about {
+    padding-bottom: 120px;
+    padding-top: 30px;
+    background-color: white;
+}
+
+#tech {
+    padding-top: 60px;
+    background-image: url('../images/techno.jpg');
+    color: white;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+#tech h2 {
+    padding-bottom: 10px;
+}
+
+#tech .container > div > div {
+    padding-bottom: 30px;
+}
+
+.my-paroller {
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.projects {
+    padding-top: 60px;
+    margin-bottom: 80px;
+}
+
+.projects h2{
+    margin-bottom: 0px;
+}
+
+.projects .container > div > div {
+    margin-top: 0px;
+    padding-bottom: 60px;
+}
+.projects .card-title {
+    font-size: 28px;
+}
+
+#feedback {
+    padding-top: 60px;
+    background-image: url('../images/persons.jpg');
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+.my-paroller2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-text {
+    font-size: 3.5vh;
+    font-weight: 400;
+}
+.carousel-text-credit {
+    font-size: 2.7vh;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #132a44;
+  margin-right: 0px;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color:#132a44;
+}
+
+#contact {
+    padding-top: 60px;
+    background-color: #132a44;
+    color: white;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+
+.social {
+    text-align: left;
+    line-height: 2em
+}
+
+.social a{
+ color: white;
+}
+
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+      /* (80px - line-height of 27px) / 2 = 26.5px */
+      padding-top: 26.5px;
+      padding-bottom: 26.5px;
+      line-height: 27px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #feedback {
+        padding-top: 60px;
+        background-image: url('../images/persons_m.jpg');
+        text-align: center;
+        padding-bottom: 120px;
+    }
+    
+    .my-paroller2 {
+        background-repeat: no-repeat;
+        background-size: auto 120%;
+    }
+  }
