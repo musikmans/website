@@ -46,7 +46,20 @@ $('.my-paroller').paroller();
         $("html, body").animate({ scrollTop: $('#home').offset().top}, 1000);
       });
 
-      $('.about').waypoint(function () {
+
+      $('#home').waypoint(function () {
+        $("#feedbacklink").removeClass("active");
+        $("#aboutlink").removeClass("active");
+        $("#toplink").addClass("active");
+        $("#techlink").removeClass("active");
+        $("#projectlink").removeClass("active");
+        $("#contactlink").removeClass("active");
+      }, {
+          offset: '50%'
+        });
+
+      $('#about').waypoint(function () {
+        $("#toplink").removeClass("active");
         $("#feedbacklink").removeClass("active");
         $("#aboutlink").addClass("active");
         $("#techlink").removeClass("active");
@@ -57,6 +70,7 @@ $('.my-paroller').paroller();
         });
 
       $('#tech').waypoint(function () {
+        $("#toplink").removeClass("active");
         $("#feedbacklink").removeClass("active");
         $("#techlink").addClass("active");
         $("#aboutlink").removeClass("active");
@@ -66,6 +80,7 @@ $('.my-paroller').paroller();
           offset: '50%'
         });
       $('.projects').waypoint(function () {
+        $("#toplink").removeClass("active");
         $("#feedbacklink").removeClass("active");
         $("#projectlink").addClass("active");
         $("#aboutlink").removeClass("active");
@@ -75,6 +90,7 @@ $('.my-paroller').paroller();
           offset: '50%'
         });
       $('#feedback').waypoint(function () {
+        $("#toplink").removeClass("active");
         $("#feedbacklink").addClass("active");
         $("#projectlink").removeClass("active");
         $("#aboutlink").removeClass("active");
@@ -84,6 +100,7 @@ $('.my-paroller').paroller();
           offset: '50%'
         });
       $('.contact').waypoint(function () {
+        $("#toplink").removeClass("active");
         $("#contactlink").addClass("active");
         $("#feedbacklink").removeClass("active");
         $("#projectlink").removeClass("active");
